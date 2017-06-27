@@ -9,14 +9,15 @@ Gem::Specification.new do |s|
   s.version     = ActiveCodhab::VERSION
   s.authors     = ["Elton Silva"]
   s.email       = ["elton.chrls@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveCodhab."
-  s.description = "TODO: Description of ActiveCodhab."
+  s.homepage    = "https://github.com/codhab/active_codhab"
+  s.summary     = "Summary of ActiveCodhab."
+  s.description = "Description of ActiveCodhab."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.1.2"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "pg"
+  s.add_dependency "sqlite3"
+  
 end

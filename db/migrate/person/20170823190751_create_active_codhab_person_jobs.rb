@@ -6,7 +6,7 @@ class CreateActiveCodhabPersonJobs < ActiveRecord::Migration[5.1]
       t.string  :code 
       t.boolean :status, default: false 
       t.float   :salary
-      t.sting   :function_code 
+      t.string  :function_code 
 
       t.timestamps
     end

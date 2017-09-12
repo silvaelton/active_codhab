@@ -1,0 +1,155 @@
+  [1m[35m (257.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "active_codhab_test"[0m
+  [1m[35m (866.4ms)[0m  [1m[35mCREATE DATABASE "active_codhab_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_codhab_person_staff_time_sheets" CASCADE[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "active_codhab_person_staff_time_sheets" ("id" bigserial primary key, "time_sheet_id" integer, "vocation_id" integer, "allowance_ids" text[], "staff_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (97.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (90.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8807520070056351315)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveCodhabPersonStaffs (20170823133424)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (78.3ms)[0m  [1m[35mCREATE TABLE "extranet"."person_staffs" ("id" bigserial primary key, "code" character varying, "name" character varying, "cpf" character varying, "rg" character varying, "rg_org" character varying, "blood_type" character varying, "born" date, "avatar" character varying, "personal_image" character varying, "branch_line" character varying, "curriculum" character varying, "email" character varying, "start_hour" time, "end_hour" time, "contract_date" date, "shutdown_date" date, "wekeend_access" boolean DEFAULT 'f', "status" boolean DEFAULT 'f', "administrator" boolean DEFAULT 'f', "gender_id" integer, "password" character varying, "job_id" integer, "terms_use" boolean DEFAULT 'f', "introduce" boolean DEFAULT 'f', "private_email" character varying, "civil_state_id" integer, "birth_place" character varying, "born_uf_id" integer, "contract_type_id" integer, "address" character varying, "address_complement" character varying, "burgh" character varying, "state_id" integer, "city_id" integer, "cep" character varying, "telephone" character varying, "celphone" character varying, "ctps_number" character varying, "ctps_serial" character varying, "ctps_uf_id" integer, "pis_pasep_number" character varying, "pis_pasep_date" date, "electoral_title_number" character varying, "electoral_title_zone" character varying, "electoral_title_section" character varying, "electoral_title_uf_id" integer, "bank_number" character varying, "bank_agency_number" character varying, "bank_account_number" character varying, "spouse_name" character varying, "education_background_id" integer, "graduation" character varying, "mobile_user_token" character varying, "mobile_push_token" character varying, "resolution" character varying, "resolution_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823133424"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreNavs (20170823184333)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (72.5ms)[0m  [1m[35mCREATE TABLE "extranet"."core_navs" ("id" bigserial primary key, "label" character varying, "description" text, "father_id" integer, "status" boolean DEFAULT 't', "group_permission_id" integer, "permission_ids" text[], "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184333"]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCorePosts (20170823184609)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (81.1ms)[0m  [1m[35mCREATE TABLE "extranet"."core_posts" ("id" bigserial primary key, "title" character varying, "content" text, "status" boolean DEFAULT 't', "special" boolean DEFAULT 't', "creator_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184609"]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreSystems (20170823184615)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (106.7ms)[0m  [1m[35mCREATE TABLE "extranet"."core_systems" ("id" bigserial primary key, "name" character varying, "status" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184615"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCorePermissions (20170823184621)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (74.6ms)[0m  [1m[35mCREATE TABLE "extranet"."core_permissions" ("id" bigserial primary key, "name" character varying, "description" text, "code" character varying, "system_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184621"]]
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreGroupPermissions (20170823184627)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (91.0ms)[0m  [1m[35mCREATE TABLE "extranet"."core_group_permissions" ("id" bigserial primary key, "name" character varying, "description" text, "permission_ids" text[], "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184627"]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreUserGroups (20170823184633)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.4ms)[0m  [1m[35mCREATE TABLE "extranet"."core_user_groups" ("id" bigserial primary key, "group_id" integer, "user_id" integer, "sponsor_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184633"]]
+  [1m[35m (22.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreUserPermissions (20170823184639)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.2ms)[0m  [1m[35mCREATE TABLE "extranet"."core_user_permissions" ("id" bigserial primary key, "permission_id" integer, "user_id" integer, "sponsor_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184639"]]
+  [1m[35m (22.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreAlerts (20170823184643)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (110.4ms)[0m  [1m[35mCREATE TABLE "extranet"."core_alerts" ("id" bigserial primary key, "title" character varying, "content" text, "priority" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823184643"]]
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonTimeSheets (20170823190703)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (77.4ms)[0m  [1m[35mCREATE TABLE "extranet"."person_time_sheets" ("id" bigserial primary key, "month" integer, "year" integer, "creator_id" integer, "exception_days" text, "exception_days_text" character varying, "exception_before_noon" text, "exception_before_noon_text" character varying, "exception_afternoon" text, "exception_afternoon_text" character varying, "status" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190703"]]
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonSectors (20170823190711)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (103.2ms)[0m  [1m[35mCREATE TABLE "extranet"."person_sectors" ("id" bigserial primary key, "name" character varying, "acron" character varying, "prefex" character varying, "father_id" integer, "responsible_id" integer, "status" boolean DEFAULT 't', "code" character varying, "color" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190711"]]
+  [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabCoreNotifications (20170823190716)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (78.5ms)[0m  [1m[35mCREATE TABLE "extranet"."core_notifications" ("id" bigserial primary key, "user_id" integer, "title" character varying, "content" text, "read" boolean DEFAULT 'f', "read_date" date, "priority" boolean DEFAULT 'f', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190716"]]
+  [1m[35m (19.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonStaffMirrors (20170823190725)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (103.0ms)[0m  [1m[35mCREATE TABLE "extranet"."person_staff_mirrors" ("id" bigserial primary key, "staff_id" integer, "name" character varying, "rg" character varying, "rg_org" character varying, "blood_type" character varying, "born" date, "avatar" character varying, "personal_image" character varying, "branch_line" character varying, "curriculum" character varying, "email" character varying, "start_hour" time, "end_hour" time, "contract_date" date, "shutdown_date" date, "wekeend_access" boolean DEFAULT 'f', "status" boolean DEFAULT 'f', "administrator" boolean DEFAULT 'f', "gender_id" integer, "job_id" integer, "private_email" character varying, "civil_state_id" integer, "birth_place" character varying, "born_uf_id" integer, "contract_type_id" integer, "address" character varying, "address_complement" character varying, "burgh" character varying, "state_id" integer, "city_id" integer, "cep" character varying, "telephone" character varying, "celphone" character varying, "ctps_number" character varying, "ctps_serial" character varying, "ctps_uf_id" integer, "pis_pasep_number" character varying, "pis_pasep_date" date, "electoral_title_number" character varying, "electoral_title_zone" character varying, "electoral_title_section" character varying, "electoral_title_uf_id" integer, "bank_number" character varying, "bank_agency_number" character varying, "bank_account_number" character varying, "spouse_name" character varying, "education_background_id" integer, "graduation" character varying, "resolution" character varying, "resolution_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190725"]]
+  [1m[35m (18.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonEducationTypes (20170823190735)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (79.8ms)[0m  [1m[35mCREATE TABLE "extranet"."person_education_types" ("id" bigserial primary key, "name" character varying, "description" text, "status" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190735"]]
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonAllowances (20170823190741)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (105.4ms)[0m  [1m[35mCREATE TABLE "extranet"."person_allowances" ("id" bigserial primary key, "date" date, "staff_id" integer, "status" boolean DEFAULT 'f', "leader_id" integer, "leader_observation" text, "staff_observation" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190741"]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonContractTypes (20170823190747)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (80.9ms)[0m  [1m[35mCREATE TABLE "extranet"."person_contract_types" ("id" bigserial primary key, "name" character varying, "description" text, "status" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190747"]]
+  [1m[35m (18.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonJobs (20170823190751)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (113.5ms)[0m  [1m[35mCREATE TABLE "extranet"."person_jobs" ("id" bigserial primary key, "name" character varying, "code" character varying, "status" boolean DEFAULT 'f', "salary" float, "function_code" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190751"]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonVocations (20170823190755)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (80.3ms)[0m  [1m[35mCREATE TABLE "extranet"."person_vocations" ("id" bigserial primary key, "started_at" date, "ended_at" date, "assignment" integer, "period" integer, "enjoy" boolean DEFAULT 'f', "staff_id" integer, "advance_money" boolean DEFAULT 'f', "leader_id" integer, "leader_observation" text, "leader_authorize" boolean DEFAULT 'f', "canceled" boolean DEFAULT 'f', "canceled_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823190755"]]
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveCodhabPersonStaffTimeSheets (20170823195515)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (123.5ms)[0m  [1m[35mCREATE TABLE "active_codhab_person_staff_time_sheets" ("id" bigserial primary key, "time_sheet_id" integer, "vocation_id" integer, "allowance_ids" text[], "staff_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170823195515"]]
+  [1m[35m (16.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2017-08-24 13:37:11.223964"], ["updated_at", "2017-08-24 13:37:11.223964"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8807520070056351315)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

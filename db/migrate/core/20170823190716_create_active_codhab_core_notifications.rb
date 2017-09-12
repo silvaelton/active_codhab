@@ -1,4 +1,4 @@
-class CreateActiveCodhabPersonNotifications < ActiveRecord::Migration[5.1]
+class CreateActiveCodhabCoreNotifications < ActiveRecord::Migration[5.1]
   def change
     create_table 'extranet.core_notifications' do |t|
 

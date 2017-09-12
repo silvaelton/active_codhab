@@ -17,11 +17,11 @@ Gestão de funcionários da companhia.
   models:   [Staff, StaffVersion]
   domain:   [Staff::ManagerStaff]
 ```  
-> Toda nova atualização de `Staff` deverá ser gravada juntamente em `StaffVersion` para fins de histórico de atualização.
+1. Toda nova atualização de `Staff` deverá ser gravada juntamente em `StaffVersion` para fins de histórico de atualização.
   
-> As atualizações marcadas como `blocked: true` na `Staff`, não deverão atualizar o registro original e sim gerar uma versão na `StaffVersion` com a flag `feedback: true` para que seja feita uma revisão antes da atualização. Se a revisão for aprovada, pegar a versão e atualizar o registro original no `Staff`. Isso ocorrerá em períodos específicos de atualização cadastral dos funcionários.
+2. As atualizações marcadas como `blocked: true` na `Staff`, não deverão atualizar o registro original e sim gerar uma versão na `StaffVersion` com a flag `feedback: true` para que seja feita uma revisão antes da atualização. Se a revisão for aprovada, pegar a versão e atualizar o registro original no `Staff`. Isso ocorrerá em períodos específicos de atualização cadastral dos funcionários.
   
-> A `StaffVersion` guarda um campo do tipo `Jsonb`, este tipo de dado é especifico no uso do PostgreSQL >= 9.4
+3. A `StaffVersion` guarda um campo do tipo `Jsonb`, este tipo de dado é especifico no uso do PostgreSQL >= 9.4
 
 
 

@@ -25,52 +25,71 @@ Gestão de funcionários da companhia.
 
 
 
+### Cargos
 
-> Cargos
-
-```ruby
-  Job
-```
-
-> Feriados
-
+Gestão de cargos dos funcionários
 
 ```ruby
-  Holiday
-```
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
 
-> Setores
+1. CRUD simples para gestão de cargos.
 
-```ruby
-  Sector
-```
 
-> Tipos de escolaridade
-
-```ruby
-  EducationType
-```
-
-> Férias
+### Feriados
 
 ```ruby
-  Vacation
-```
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
 
-> Abonos
-
-```ruby
-  Allowance, AllowanceDate
-```
-
-> Tipos de contratação
+### Setores
 
 ```ruby
-  ContractType
-```
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
 
-> Emissão de folha de ponto
+### Tipos de escolaridade
 
 ```ruby
-  StaffTimeSheet
-```
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
+
+### Férias
+
+```ruby
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
+
+### Abonos
+
+```ruby
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
+
+### Tipos de contratação
+
+```ruby
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  
+
+### Emissão de folha de ponto
+
+```ruby
+  tables:   [person_jobs]
+  models:   [Job]
+  domain:   [Staff::ManagerJob]
+```  

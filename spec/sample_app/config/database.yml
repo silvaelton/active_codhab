@@ -8,14 +8,14 @@ development:
   <<: *default
   database: 'active_codhab_development'
   username: 'postgres'
-  password: '123456789'
+  password: 'mila1324'
   host: 'localhost'
-  schema_search_path: 'extranet, sihab, portal, generic' 
+  schema_search_path: 'extranet, sihab, portal, generic'
 
 test:
   <<: *default
   database: 'active_codhab_test'
   username: 'postgres'
-  password: '123456789'
+  password: 'mila1324'
   host: 'localhost'
-  schema_search_path: 'extranet, sihab, portal, generic' 
+  schema_search_path: 'extranet, sihab, portal, generic'

@@ -1,3 +1,8 @@
+require 'faker'
+require 'factory_girl'
+
+Faker::Config.locale = :'pt-BR'
+FactoryGirl.find_definitions
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

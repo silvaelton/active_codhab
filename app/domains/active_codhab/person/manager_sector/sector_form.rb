@@ -6,6 +6,7 @@ module ActiveCodhab
     class SectorForm < ActiveCodhab::ApplicationForm
 
       include ActiveModel::Model
+      include ActiveModel::Associations
       include ActiveCodhab::FormConcern
       include Virtus.model
 
@@ -18,6 +19,8 @@ module ActiveCodhab
       attribute :code, String
       attribute :color, String
       attribute :status, Boolean
+
+      belongs_to :father, required: false, class_name: "ActiveCodhab::Person::ManagerSector::SectorForm", foreign_key: 'father_id'
 
 
       validates :name, :acron, :prefex, presence: true

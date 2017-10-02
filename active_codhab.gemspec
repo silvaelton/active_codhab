@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Elton Silva"]
   s.email       = ["elton.chrls@gmail.com"]
   s.homepage    = "https://github.com/codhab/active_codhab"
-  s.summary     = "ActiveCodhab."
+  s.summary     = "Sumário"
   s.description = "ActiveCodhab."
   s.license     = "MIT"
 

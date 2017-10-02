@@ -2,3 +2,4 @@
 log/*.log
 pkg/
 .byebug_history
+spec/sample_app/log/*

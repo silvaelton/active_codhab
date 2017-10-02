@@ -21577,3 +21577,117 @@ Migrating to CreateActiveCodhabPersonStaffTimeSheets (20170823195515)
   [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '848') LIMIT $1[0m  [["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Job Load (23.6ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Isabel Melo') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.6ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Isabel Melo"], ["code", "91299"], ["status", "t"], ["salary", 99415.93], ["function_code", "51"], ["created_at", "2017-10-02 18:31:28.191558"], ["updated_at", "2017-10-02 18:31:28.191558"]]
+  [1m[35m (44.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Talita Viana') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Talita Viana"], ["code", "52751"], ["status", "t"], ["salary", 73916.75], ["function_code", "58"], ["created_at", "2017-10-02 18:31:28.262910"], ["updated_at", "2017-10-02 18:31:28.262910"]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Laura Mendes') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Laura Mendes"], ["code", "51367"], ["status", "t"], ["salary", 67666.63], ["function_code", "77"], ["created_at", "2017-10-02 18:31:28.287604"], ["updated_at", "2017-10-02 18:31:28.287604"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Laura Mendes') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Alice Nunes') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alice Nunes"], ["code", "91847"], ["status", "t"], ["salary", 57972.21], ["function_code", "68"], ["created_at", "2017-10-02 18:31:28.308271"], ["updated_at", "2017-10-02 18:31:28.308271"]]
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 399], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Isabela Souza') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "extranet"."person_jobs" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_jobs"."id" = $3[0m  [["name", "Isabela Souza"], ["updated_at", "2017-10-02 18:31:28.340742"], ["id", 399]]
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Joaquim Cavalcanti Jr.') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Joaquim Cavalcanti Jr."], ["code", "37700"], ["status", "t"], ["salary", 26765.37], ["function_code", "48"], ["created_at", "2017-10-02 18:31:28.355556"], ["updated_at", "2017-10-02 18:31:28.355556"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 400], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Bryan Moraes Jr.') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bryan Moraes Jr."], ["code", "82535"], ["status", "t"], ["salary", 41863.48], ["function_code", "83"], ["created_at", "2017-10-02 18:31:28.365638"], ["updated_at", "2017-10-02 18:31:28.365638"]]
+  [1m[35m (9.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Bryan Moraes Jr.') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Guilherme Santos') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Guilherme Santos"], ["code", "86307"], ["status", "t"], ["salary", 38859.38], ["function_code", "64"], ["created_at", "2017-10-02 18:31:52.381266"], ["updated_at", "2017-10-02 18:31:52.381266"]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Eduarda Aguiar Neto') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Eduarda Aguiar Neto"], ["code", "52766"], ["status", "t"], ["salary", 77588.42], ["function_code", "41"], ["created_at", "2017-10-02 18:31:52.404412"], ["updated_at", "2017-10-02 18:31:52.404412"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Paulo Pereira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Paulo Pereira"], ["code", "20188"], ["status", "t"], ["salary", 61661.63], ["function_code", "65"], ["created_at", "2017-10-02 18:31:52.424263"], ["updated_at", "2017-10-02 18:31:52.424263"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Paulo Pereira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Eduarda Aguiar') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Eduarda Aguiar"], ["code", "79048"], ["status", "t"], ["salary", 44755.38], ["function_code", "42"], ["created_at", "2017-10-02 18:31:52.444144"], ["updated_at", "2017-10-02 18:31:52.444144"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.7ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 405], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Letícia Duarte') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "extranet"."person_jobs" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_jobs"."id" = $3[0m  [["name", "Letícia Duarte"], ["updated_at", "2017-10-02 18:31:52.456116"], ["id", 405]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Dr. Leonardo Mendes') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dr. Leonardo Mendes"], ["code", "78370"], ["status", "t"], ["salary", 94252.18], ["function_code", "14"], ["created_at", "2017-10-02 18:31:52.464570"], ["updated_at", "2017-10-02 18:31:52.464570"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 406], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Fernanda Duarte') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fernanda Duarte"], ["code", "84599"], ["status", "t"], ["salary", 19092.61], ["function_code", "65"], ["created_at", "2017-10-02 18:31:52.473920"], ["updated_at", "2017-10-02 18:31:52.473920"]]
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Fernanda Duarte') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Roberta Cavalcanti') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Roberta Cavalcanti"], ["code", "96972"], ["status", "t"], ["salary", 74710.99], ["function_code", "16"], ["created_at", "2017-10-02 18:32:09.579213"], ["updated_at", "2017-10-02 18:32:09.579213"]]
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Sr. Júlia Lima') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sr. Júlia Lima"], ["code", "18030"], ["status", "t"], ["salary", 22024.67], ["function_code", "81"], ["created_at", "2017-10-02 18:32:09.608655"], ["updated_at", "2017-10-02 18:32:09.608655"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Clara Silveira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Clara Silveira"], ["code", "70597"], ["status", "t"], ["salary", 44204.64], ["function_code", "21"], ["created_at", "2017-10-02 18:32:09.628475"], ["updated_at", "2017-10-02 18:32:09.628475"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Clara Silveira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Yasmin Araújo') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Yasmin Araújo"], ["code", "29231"], ["status", "t"], ["salary", 46415.05], ["function_code", "30"], ["created_at", "2017-10-02 18:32:09.643491"], ["updated_at", "2017-10-02 18:32:09.643491"]]
+  [1m[35m (22.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.8ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 411], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Sra. Eduardo Caldeira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "extranet"."person_jobs" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_jobs"."id" = $3[0m  [["name", "Sra. Eduardo Caldeira"], ["updated_at", "2017-10-02 18:32:09.673082"], ["id", 411]]
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'Ladislau Vieira') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ladislau Vieira"], ["code", "64555"], ["status", "t"], ["salary", 17725.46], ["function_code", "29"], ["created_at", "2017-10-02 18:32:09.688429"], ["updated_at", "2017-10-02 18:32:09.688429"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE "extranet"."person_jobs"."id" = $1 LIMIT $2[0m  [["id", 412], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Job Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'César Melo') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_jobs" ("name", "code", "status", "salary", "function_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "César Melo"], ["code", "17382"], ["status", "t"], ["salary", 34012.11], ["function_code", "86"], ["created_at", "2017-10-02 18:32:09.700309"], ["updated_at", "2017-10-02 18:32:09.700309"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Job Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_jobs".* FROM "extranet"."person_jobs" WHERE (name = 'César Melo') LIMIT $1[0m  [["LIMIT", 1]]

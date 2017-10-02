@@ -8,7 +8,7 @@ development:
   <<: *default
   database: 'active_codhab_development'
   username: 'postgres'
-  password: 'mila1324'
+  password: <%= ENV['DB_PASS'] %>
   host: 'localhost'
   schema_search_path: 'extranet, sihab, portal, generic'
 
@@ -16,6 +16,6 @@ test:
   <<: *default
   database: 'active_codhab_test'
   username: 'postgres'
-  password: 'mila1324'
+  password: <%= ENV['DB_PASS'] %>
   host: 'localhost'
   schema_search_path: 'extranet, sihab, portal, generic'

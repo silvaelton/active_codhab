@@ -20,8 +20,6 @@ module ActiveCodhab
       attribute :color, String
       attribute :status, Boolean
 
-      belongs_to :father, required: false, class_name: "ActiveCodhab::Person::ManagerSector::SectorForm", foreign_key: 'father_id'
-
 
       validates :name, :acron, :prefex, presence: true
       validates :name, :prefex, unique_record: { model: ActiveCodhab::Person::Sector }

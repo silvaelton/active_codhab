@@ -55,7 +55,6 @@ describe "ManagerSector::SectorFormSpec" do
       it "Criando sector com pai" do
         child_sector.save
         expect(child_sector.save).to be true
-        #expect(child_sector.father_id).to eq(:father)
       end
 
       it "Negando criação de registro inválido" do
@@ -65,15 +64,17 @@ describe "ManagerSector::SectorFormSpec" do
       end
 
       it "Negando criação de registro duplicado" do
-        subject.save
 
-        last_record = subject.record
+        last_record = ActiveCodhab::Person::Sector.last
 
         new_record = new_sector
         new_record.name = last_record.name
+        new_record.prefex = last_record.prefex
+        new_record.acron = "123"
         new_record.save
 
         expect(new_record.errors.has_key?(:name)).to be true
+        expect(new_record.errors.has_key?(:prefex)).to be true
       end
 
       it "Atualizando registro válido" do
@@ -87,10 +88,8 @@ describe "ManagerSector::SectorFormSpec" do
       end
 
       it "Atualizando registro inválido" do
-        subject.save
-
         record_updated = ActiveCodhab::Person::ManagerSector::SectorForm.new
-        record_updated.find(subject.record.id)
+        record_updated.find(ActiveCodhab::Person::Sector.last.id)
         record_updated.name = nil
 
         expect(record_updated.save).not_to be true

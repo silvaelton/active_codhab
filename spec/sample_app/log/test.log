@@ -21577,3 +21577,735 @@ Migrating to CreateActiveCodhabPersonStaffTimeSheets (20170823195515)
   [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '848') LIMIT $1[0m  [["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '455') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '639') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '921') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '921') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '271') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '868') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Banking') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '352') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '883') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '581') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Retail') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '259') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Banking') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '582') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '358') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '358') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '355') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (3.8ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Retail') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '958') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '119') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (3.1ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Construction') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '886') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (3.9ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Construction') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '242') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Hospitality') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '183') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '311') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '240') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '240') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Hospitality') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '762') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Hospitality') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '762') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '272') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '552') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (3.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '386') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '580') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.7ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '389') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '783') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '357') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '357') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '596') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '596') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.7ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '118') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '690') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '818') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '818') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '689') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '689') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '183') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '543') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '171') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (3.0ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '561') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Hospitality') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.9ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Design') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Design') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (5.9ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Sales') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Design') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (30.1ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Community-Services"], ["acron", "Red"], ["prefex", "527"], ["code", "87999"], ["color", "#0ca0e7"], ["created_at", "2017-10-02 14:28:06.201018"], ["updated_at", "2017-10-02 14:28:06.201018"]]
+  [1m[35m (43.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Education"], ["acron", "Cyborg"], ["prefex", "324"], ["code", "81333"], ["color", "#288c23"], ["created_at", "2017-10-02 14:28:06.281891"], ["updated_at", "2017-10-02 14:28:06.281891"]]
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Technology"], ["acron", "Giant"], ["prefex", "497"], ["code", "19823"], ["color", "#fd9f1d"], ["created_at", "2017-10-02 14:28:06.295712"], ["updated_at", "2017-10-02 14:28:06.295712"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Consulting"], ["acron", "Green"], ["prefex", "596"], ["code", "70297"], ["color", "#833951"], ["created_at", "2017-10-02 14:28:06.334132"], ["updated_at", "2017-10-02 14:28:06.334132"]]
+  [1m[35m (24.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Administration"], ["acron", "Agent"], ["prefex", "289"], ["code", "88453"], ["color", "#6652eb"], ["created_at", "2017-10-02 14:28:06.365474"], ["updated_at", "2017-10-02 14:28:06.365474"]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Retail') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Retail"], ["acron", "Magnificent"], ["prefex", "585"], ["code", "58015"], ["color", "#581695"], ["created_at", "2017-10-02 14:29:17.539508"], ["updated_at", "2017-10-02 14:29:17.539508"]]
+  [1m[35m (24.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Real-Estate"], ["acron", "Dark"], ["prefex", "140"], ["code", "32031"], ["color", "#3fc985"], ["created_at", "2017-10-02 14:29:17.570986"], ["updated_at", "2017-10-02 14:29:17.570986"]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Healthcare"], ["acron", "Ultra"], ["prefex", "746"], ["code", "79153"], ["color", "#13c4af"], ["created_at", "2017-10-02 14:29:40.584541"], ["updated_at", "2017-10-02 14:29:40.584541"]]
+  [1m[35m (20.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "IT"], ["acron", "Dark"], ["prefex", "850"], ["code", "70817"], ["color", "#1f3553"], ["created_at", "2017-10-02 14:29:40.621981"], ["updated_at", "2017-10-02 14:29:40.621981"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Consulting"], ["acron", "Doctor"], ["prefex", "867"], ["code", "91382"], ["color", "#80d21b"], ["created_at", "2017-10-02 14:29:40.642959"], ["updated_at", "2017-10-02 14:29:40.642959"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "extranet"."person_sectors" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_sectors"."id" = $3[0m  [["name", "Manufacturing"], ["updated_at", "2017-10-02 14:29:40.652428"], ["id", 80]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Administration"], ["acron", "Captain"], ["prefex", "540"], ["code", "61898"], ["color", "#79adeb"], ["created_at", "2017-10-02 14:29:40.658609"], ["updated_at", "2017-10-02 14:29:40.658609"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Sales') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '691') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sales"], ["acron", "General"], ["prefex", "691"], ["code", "48646"], ["color", "#4a45d8"], ["created_at", "2017-10-02 14:32:48.647688"], ["updated_at", "2017-10-02 14:32:48.647688"]]
+  [1m[35m (18.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Sales') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '712') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '369') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "father_id", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Marketing"], ["acron", "Giant"], ["prefex", "369"], ["father_id", 82], ["code", "28210"], ["color", "#7df226"], ["created_at", "2017-10-02 14:32:48.684441"], ["updated_at", "2017-10-02 14:32:48.684441"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '369') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (1.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '369') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Government') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '234') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Government"], ["acron", "General"], ["prefex", "234"], ["code", "50515"], ["color", "#ec7c4f"], ["created_at", "2017-10-02 14:32:48.704819"], ["updated_at", "2017-10-02 14:32:48.704819"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Hospitality') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '234') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "extranet"."person_sectors" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_sectors"."id" = $3[0m  [["name", "Hospitality"], ["updated_at", "2017-10-02 14:32:48.712073"], ["id", 84]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Healthcare') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '174') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Healthcare"], ["acron", "Cyborg"], ["prefex", "174"], ["code", "96994"], ["color", "#f15ddb"], ["created_at", "2017-10-02 14:32:48.719753"], ["updated_at", "2017-10-02 14:32:48.719753"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '174') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Construction') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '665') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Construction"], ["acron", "Illustrious"], ["prefex", "665"], ["code", "92738"], ["color", "#f8ed4b"], ["created_at", "2017-10-02 14:32:48.729684"], ["updated_at", "2017-10-02 14:32:48.729684"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Construction') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '927') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Sales') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '701') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '354') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mining"], ["acron", "Ultra"], ["prefex", "354"], ["code", "35966"], ["color", "#fc90c3"], ["created_at", "2017-10-02 14:37:47.177881"], ["updated_at", "2017-10-02 14:37:47.177881"]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '246') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '246') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '354') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '596') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Legal"], ["acron", "Green"], ["prefex", "596"], ["code", "79717"], ["color", "#6479bc"], ["created_at", "2017-10-02 14:37:47.204097"], ["updated_at", "2017-10-02 14:37:47.204097"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Legal') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '596') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '898') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Accounting"], ["acron", "Ultra"], ["prefex", "898"], ["code", "35467"], ["color", "#8a45d4"], ["created_at", "2017-10-02 14:37:47.214291"], ["updated_at", "2017-10-02 14:37:47.214291"]]
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '898') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Sales') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '595') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.8ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Real-Estate') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '210') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Real-Estate"], ["acron", "Magnificent"], ["prefex", "210"], ["code", "18613"], ["color", "#6f5471"], ["created_at", "2017-10-02 14:39:06.578221"], ["updated_at", "2017-10-02 14:39:06.578221"]]
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Design') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '650') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Design"], ["acron", "Red"], ["prefex", "650"], ["code", "76881"], ["color", "#c9999b"], ["created_at", "2017-10-02 14:39:06.603870"], ["updated_at", "2017-10-02 14:39:06.603870"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '142') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "father_id", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Advertising"], ["acron", "Mr"], ["prefex", "142"], ["father_id", 91], ["code", "42495"], ["color", "#7c029b"], ["created_at", "2017-10-02 14:39:06.618063"], ["updated_at", "2017-10-02 14:39:06.618063"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '142') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '142') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Construction') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '875') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Construction"], ["acron", "Cyborg"], ["prefex", "875"], ["code", "39460"], ["color", "#ac8505"], ["created_at", "2017-10-02 14:39:06.633972"], ["updated_at", "2017-10-02 14:39:06.633972"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Retail') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '875') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "extranet"."person_sectors" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_sectors"."id" = $3[0m  [["name", "Retail"], ["updated_at", "2017-10-02 14:39:06.641919"], ["id", 93]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Retail') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '150') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '288') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Consulting"], ["acron", "Green"], ["prefex", "288"], ["code", "98027"], ["color", "#8402ce"], ["created_at", "2017-10-02 14:39:06.651450"], ["updated_at", "2017-10-02 14:39:06.651450"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Consulting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '312') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '492') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Technology"], ["acron", "Doctor"], ["prefex", "492"], ["code", "56612"], ["color", "#c40cec"], ["created_at", "2017-10-02 14:39:46.395591"], ["updated_at", "2017-10-02 14:39:46.395591"]]
+  [1m[35m (23.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Accounting') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '565') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '696') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Advertising') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '696') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '492') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '510') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Education"], ["acron", "The"], ["prefex", "510"], ["code", "34289"], ["color", "#240ffc"], ["created_at", "2017-10-02 14:39:46.462175"], ["updated_at", "2017-10-02 14:39:46.462175"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (4.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '510') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "extranet"."person_sectors" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_sectors"."id" = $3[0m  [["name", "Administration"], ["updated_at", "2017-10-02 14:39:46.481888"], ["id", 96]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Government') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '824') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Government"], ["acron", "Magnificent"], ["prefex", "824"], ["code", "95371"], ["color", "#c845d1"], ["created_at", "2017-10-02 14:39:46.490507"], ["updated_at", "2017-10-02 14:39:46.490507"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.7ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '824') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (3.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '106') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "IT"], ["acron", "Ultra"], ["prefex", "106"], ["code", "56839"], ["color", "#84b74c"], ["created_at", "2017-10-02 14:39:46.508432"], ["updated_at", "2017-10-02 14:39:46.508432"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'IT') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '339') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.6ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '849') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Community-Services"], ["acron", "The"], ["prefex", "849"], ["code", "57631"], ["color", "#fa51b4"], ["created_at", "2017-10-02 14:39:50.459895"], ["updated_at", "2017-10-02 14:39:50.459895"]]
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.4ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '840') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Education"], ["acron", "Giant"], ["prefex", "840"], ["code", "74676"], ["color", "#5c1369"], ["created_at", "2017-10-02 14:39:50.485627"], ["updated_at", "2017-10-02 14:39:50.485627"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '387') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '387') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Education') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '840') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Design') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '357') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '840') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Administration') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '916') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.5ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Marketing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '720') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Marketing"], ["acron", "Mr"], ["prefex", "720"], ["code", "58595"], ["color", "#b61226"], ["created_at", "2017-10-02 14:40:04.975265"], ["updated_at", "2017-10-02 14:40:04.975265"]]
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Technology') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '875') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Technology"], ["acron", "Illustrious"], ["prefex", "875"], ["code", "68229"], ["color", "#076a1e"], ["created_at", "2017-10-02 14:40:05.000379"], ["updated_at", "2017-10-02 14:40:05.000379"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '497') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "father_id", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Manufacturing"], ["acron", "Cyborg"], ["prefex", "497"], ["father_id", 102], ["code", "61678"], ["color", "#bac802"], ["created_at", "2017-10-02 14:40:05.007198"], ["updated_at", "2017-10-02 14:40:05.007198"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '497') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Manufacturing') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '497') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Government') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '743') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Government"], ["acron", "Cyborg"], ["prefex", "743"], ["code", "97005"], ["color", "#dfa9ac"], ["created_at", "2017-10-02 14:40:05.023058"], ["updated_at", "2017-10-02 14:40:05.023058"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Mining') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '743') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "extranet"."person_sectors" SET "name" = $1, "updated_at" = $2 WHERE "extranet"."person_sectors"."id" = $3[0m  [["name", "Mining"], ["updated_at", "2017-10-02 14:40:05.032170"], ["id", 104]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" ORDER BY "extranet"."person_sectors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE "extranet"."person_sectors"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = NULL) LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '743') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '457') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "extranet"."person_sectors" ("name", "acron", "prefex", "code", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Community-Services"], ["acron", "Cyborg"], ["prefex", "457"], ["code", "32090"], ["color", "#b976db"], ["created_at", "2017-10-02 14:40:05.042175"], ["updated_at", "2017-10-02 14:40:05.042175"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveCodhab::Person::Sector Load (0.3ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (name = 'Community-Services') LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveCodhab::Person::Sector Load (0.2ms)[0m  [1m[34mSELECT  "extranet"."person_sectors".* FROM "extranet"."person_sectors" WHERE (prefex = '598') LIMIT $1[0m  [["LIMIT", 1]]

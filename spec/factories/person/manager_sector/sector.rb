@@ -11,7 +11,7 @@ FactoryGirl.define do
       color   {Faker::Color.hex_color}
 
       factory :child_sector do
-        association :father_id, factory: :sector, strategy: :build
+        father_id { ActiveCodhab::Person::Sector.last.id }
       end
     end
 

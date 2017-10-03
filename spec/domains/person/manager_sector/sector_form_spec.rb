@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "ManagerSector::SectorFormSpec" do
+describe "ManagerSector::SectorForm" do
 
 
   subject do

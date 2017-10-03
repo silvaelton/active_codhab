@@ -1,14 +1,9 @@
-require 'virtus'
-require 'active_codhab/application_form'
+require_dependency 'active_codhab/application_form'
+
 
 module ActiveCodhab
   module Person::ManagerSector
     class SectorForm < ActiveCodhab::ApplicationForm
-
-      include ActiveModel::Model
-      include ActiveModel::Associations
-      include ActiveCodhab::FormConcern
-      include Virtus.model
 
       attribute :id,   Integer
       attribute :name, Integer
@@ -20,10 +15,8 @@ module ActiveCodhab
       attribute :color, String
       attribute :status, Boolean
 
-
       validates :name, :acron, :prefex, presence: true
-      validates :name, :prefex, unique_record: { model: ActiveCodhab::Person::Sector }
-
+      validates :name, :prefex, 'active_codhab/uniqueness': { model: ActiveCodhab::Person::Sector }
 
       def initialize(attributes = {})
         @model_name = 'ActiveCodhab::Person::Sector'
@@ -36,8 +29,6 @@ module ActiveCodhab
       def save
         valid? ? persist! : false
       end
-
-
 
     end
   end
